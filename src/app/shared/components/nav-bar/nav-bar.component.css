@@ -9,3 +9,7 @@ a:hover {
 button {
     background-color: white;
 }
+
+.red-icon {
+    color: red;
+}
