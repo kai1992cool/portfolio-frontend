@@ -1,0 +1,11 @@
+a {
+    color: white;
+}
+
+a:hover {
+    color: var(--lightColor);
+}
+
+button {
+    background-color: white;
+}
