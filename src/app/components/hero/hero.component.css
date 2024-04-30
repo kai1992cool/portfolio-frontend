@@ -1,0 +1,102 @@
+#hero {
+    position: relative;
+}
+
+#video-background {
+    position: relative;
+    filter: brightness(70%);
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    top: 1px;
+}
+
+button {
+    background-color: var(--darkColor);
+    height: 3.125rem;
+    width: 11.625rem;
+}
+
+/* --darkColor: #012A4A;
+--darkBlue: #01497C;
+--midBlue: #2A6F97;
+--lightBlue: #61A5C2;
+--lightColor: #A9D6E5; */
+
+a {
+    text-decoration: none;
+}
+
+#contenedor {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#flip {
+    height: 50px;
+    overflow: hidden;
+}
+
+#flip>div>div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div div {
+    background: var(--lightBlue);
+}
+
+#flip div:first-child div {
+    background: var(--midBlue);
+}
+
+#flip div:last-child div {
+    background: var(--darkBlue);
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}

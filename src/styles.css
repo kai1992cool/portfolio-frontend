@@ -17,3 +17,19 @@
     --lightBlue: #61A5C2;
     --lightColor: #A9D6E5;
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+a {
+    color: white;
+}
