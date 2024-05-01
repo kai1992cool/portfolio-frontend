@@ -22,8 +22,6 @@ export class NavBarComponent {
 
   async ngOnInit() {
 
-    console.log('funciona');
-
   }
 
 }
