@@ -18,11 +18,11 @@ export class ListItemsComponent {
   arrItems: Item[] = [];
 
 
-  // itemsService = inject(ItemsService);
+  itemsService = inject(ItemsService);
 
-  // async ngOnInit() {
-  //   this.arrItems = await this.itemsService.getAll();
-  // }
+  async ngOnInit() {
+    this.arrItems = await this.itemsService.getAll();
+  }
 
 
 
