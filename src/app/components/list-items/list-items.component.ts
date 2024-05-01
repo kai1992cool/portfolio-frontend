@@ -1,8 +1,9 @@
 import { Component, inject } from '@angular/core';
-import { CardItemComponent } from '../../shared/components/card-item/card-item.component';
+import { CardItemComponent } from '../card-item/card-item.component';
 import { Router, RouterLink } from '@angular/router';
 import { Item } from '../../interfaces/interface.item';
 import { ItemsService } from '../../services/items.service';
+
 
 @Component({
   selector: 'list-items',

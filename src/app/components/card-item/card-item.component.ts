@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { Item } from '../../../interfaces/interface.item';
-import { ItemsService } from '../../../services/items.service';
+import { Item } from '../../interfaces/interface.item';
+import { ItemsService } from '../../services/items.service';
+
 
 @Component({
   selector: 'card-item',
@@ -28,5 +29,11 @@ export class CardItemComponent {
 
   itemsService = inject(ItemsService);
   // itemsService -> getAll
+
+
+  async ngOnInit() {
+    this.arrItems = await this.itemsService.getAll();
+  }
+
 
 }
