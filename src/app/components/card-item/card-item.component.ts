@@ -1,6 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { Item } from '../../interfaces/interface.item';
+import { Item } from '../../interfaces/item.interface';
 import { ItemsService } from '../../services/items.service';
 
 
@@ -13,27 +13,8 @@ import { ItemsService } from '../../services/items.service';
 })
 export class CardItemComponent {
 
-  router = inject(Router);
-
-  arrItems: Item[] = [];
-  //   export interface Item {
-  //     id: number;
-  //     organization: string;
-  //     title: string;
-  //     stDate: string;
-  //     endDate: string;
-  //     description: string;
-  //     categoryTitle: string
-  // }
-
+  @Input() item: Item | null = null;
 
   itemsService = inject(ItemsService);
-  // itemsService -> getAll
-
-
-  async ngOnInit() {
-    this.arrItems = await this.itemsService.getAll();
-  }
-
 
 }

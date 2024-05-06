@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import { User } from '../interfaces/interface.user';
+import { User } from '../interfaces/user.interface';
 import { JwtPayload, jwtDecode } from 'jwt-decode';
 
 // DEVELOPMENT - ENVIRONMENT

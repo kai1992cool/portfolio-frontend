@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 import { UsersService } from '../../../services/users.service';
-import { User } from '../../../interfaces/interface.user';
+import { User } from '../../../interfaces/user.interface';
 
 
 @Component({

@@ -5,5 +5,6 @@ export interface Item {
     stDate: string;
     endDate: string;
     description: string;
-    categoryTitle: string
+    categoryTitle: string;
+    categoryId: number;
 }

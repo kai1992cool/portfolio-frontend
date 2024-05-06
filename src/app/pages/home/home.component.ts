@@ -11,8 +11,6 @@ import { ListItemsComponent } from '../../components/list-items/list-items.compo
 })
 export class HomeComponent {
 
-  ngOnInit() {
-    console.log('home funciona');
-  }
+
 
 }

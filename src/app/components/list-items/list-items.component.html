@@ -1,16 +1,17 @@
-<section>
-    @for (item of arrItems; track $index) {
-    <h2 class="categoryTitle">{{item.categoryTitle}}</h2>
-    <article>
-        <card-item></card-item>
-    </article>
-    }
-</section>
+<!-- LIST ITEM -->
 
-<!-- TODO: bucle para recorrer el array de items buscando las categorias
 <section>
-    <h2 class="categoryTitle">{{categoryTitle}}</h2>
-    <article>
-        <card-item></card-item>
-    </article>
-</section> -->
+    <div>
+        @for (item of arrItems; track $index) {
+        <h2>{{ item.categoryTitle }}</h2>
+
+        <div>
+            @for (item of arrItems; track $index) {
+            <div>
+                <card-item [item]="item"></card-item>
+            </div>
+            }
+        </div>
+        }
+    </div>
+</section>
