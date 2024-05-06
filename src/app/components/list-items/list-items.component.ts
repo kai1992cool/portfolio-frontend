@@ -36,13 +36,12 @@ export class ListItemsComponent {
 
 
   //----------- NG-ON-INIT -----------//
-  async ngOnInit() {
-
-    // ALL CATEGORIES
-    this.allCategories = await this.itemsService.getAll();
-
+  ngOnInit() {
     // ALL ITEMS
-    this.arrItems = await this.itemsService.getAll();
+    this.itemsService.getAll().subscribe((res: Item[]) => {
+      this.arrItems = res;
+      this.allCategories = res;
+
 
     // CATEGORIES WITH ITEMS
     this.arrItems.forEach(item => {
@@ -72,5 +71,6 @@ export class ListItemsComponent {
     // title: "ChatGPT 4, Midjourney, DALL-E 3 and AI"
     // ​---------------------------------------------
 
+    })
   }
 }

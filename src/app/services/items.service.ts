@@ -15,10 +15,8 @@ export class ItemsService {
 
     constructor(private httpClient: HttpClient) { }
 
-    async getAll() {
-        return firstValueFrom(
-            this.httpClient.get<Item[]>(this.baseUrl)
-        );
+    getAll() {
+        return this.httpClient.get<Item[]>(this.baseUrl);
     }
 
 }
